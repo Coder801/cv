@@ -1,0 +1,29 @@
+.social {
+  &--list {
+    clear: fix;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &--item {
+    clear: fix;
+    margin: 0 10px 10px 0;
+  }
+  &--link {
+    display: block;
+    color: $colorSidebar;
+    text-decoration: none;
+
+    > .icon {
+      float: left;
+      margin-right: 10px;
+      fill: white;
+      size: 40px 41px;
+    }
+    > span {
+      position: relative;
+      top: 10px;
+      color: $colorSidebar;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.timeline {
+  lost-utility: clearfix;
+  &--date {
+    lost-column: 1/12;
+    display: block;
+    margin-top: 8px;
+    font-weight: 300;
+    > span {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+  &--desc {
+    lost-column: 11/12;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+  }
+  &--title {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    letter-spacing: -.2px;
+  }
+  &--sub-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: -.2px;
+  }
+  &--text {
+    margin-bottom: 20px;
+    > p {
+
+    }
+  }
+}

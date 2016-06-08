@@ -5,16 +5,16 @@ html {
   font-size: 18px;
   font-family: $fontRoboto;
   @media (--xl) {
-    font-size: 16px;
+    font-size: 17px;
   }
   @media (--lg) {
-    font-size: 15px;
+    font-size: 16px;
   }
   @media (--md) {
-    font-size: 14px;
+    font-size: 15px;
   }
   @media (--sm) {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 input,

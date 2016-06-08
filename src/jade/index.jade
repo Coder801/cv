@@ -27,9 +27,8 @@ block content
               a.contact--phone(href="tel:") +380636126197
               a.contact--email(href="mailto:donischenko801@gmail.com") donischenko801@gmail.com
               a.contact--skype(href="skype:deline801") Skype: deline80
-              a.contact--linkedin(href="https://ua.linkedin.com/in/dmitryonischenko") https://ua.linkedin.com/in/dmitryonischenko
           .skill
-            h3.skill--title Skills
+            h3.sidebar--title Skills
             ul.skill--list
               li.skill--item HTML
               li.skill--item CSS
@@ -46,6 +45,22 @@ block content
               li.skill--item Gulp.js
               li.skill--item Git
               li.skill--item TDD testing
+          .social
+            h3.sidebar--title Social
+            ul.social--list
+              li.social--item
+                a.social--link(href="https://vk.com/de_line")
+                  +use('vk')
+                  span de_line
+              li.social--item
+                a.social--link(href="https://www.facebook.com/dmitry.onischenko.39")
+                  +use('fb')
+                  span dmitry.onischenko.39
+              li.social--item
+                a.social--link(href="https://ua.linkedin.com/in/dmitryonischenko")
+                  +use('in')
+                  span dmitryonischenko
+          a(href="files/Middle Frontend-Dmitry Onischenko.pdf").sidebar--btn.btn Download PDF
 
         main.content.col-8(role="main")
           h2.title Summary
@@ -59,44 +74,44 @@ block content
 
           h2.title Work History
           dl.timeline
-            dt.timeline--date 2013-04 - Present
+            dt.timeline--date #[span 2013-04 -] #[span Present]
             dd.timeline--desc
               h3.timeline--title Frontend Developer
               h4.timeline--sub-title ARIO Industrial Inc
-                .timeline--text
-                  p Frontend Developer Experience working in large-scale projects and commercial sites. Full Front-end development. Development of adaptive websites and mobile applications. Development of templates
-            dt.timeline--date 2012-06 - 2013-04
+              .timeline--text
+                p Frontend Developer Experience working in large-scale projects and commercial sites. Full Front-end development. Development of adaptive websites and mobile applications. Development of templates
+            dt.timeline--date #[span 2012-06 -] #[span 2013-04]
             dd.timeline--desc
               h3.timeline--title Freelancer
               h4.timeline--sub-title Freelancer
-                .timeline--text
-                  p Freelancer Freelancer Work in a team of developers. Creation of web templates and applications. Development of web sites CMS (Wordpress, Prestashop, Drupal). Assistance in optimization and promotion
-            dt.timeline--date 2011-11 - 2012-06
+              .timeline--text
+                p Freelancer Freelancer Work in a team of developers. Creation of web templates and applications. Development of web sites CMS (Wordpress, Prestashop, Drupal). Assistance in optimization and promotion
+            dt.timeline--date #[span 2011-11 -] #[span 2012-06]
             dd.timeline--desc
               h3.timeline--title HTML/CSS Markup developer
               h4.timeline--sub-title GeeksForLess Inc
-                .timeline--text
-                  p HTML Coder Created web page layouts(convertion from PSD to HTML), advertising material and logos from the ground up based on project requirements.
-            dt.timeline--date 2011-04 - 2011-10
+              .timeline--text
+                p HTML Coder Created web page layouts(convertion from PSD to HTML), advertising material and logos from the ground up based on project requirements.
+            dt.timeline--date #[span 2011-04 -] #[span 2011-10]
             dd.timeline--desc
               h3.timeline--title Data-analist
               h4.timeline--sub-title Fetch Technologies
-                .timeline--text
-                  p Data-analist Agents creation for the data extraction from external sources. Transformation and cleaning with the subsequent loading in the SQL base. Databases technologies(SQL etc), XML, Javascript, ETL frameworks
+              .timeline--text
+                p Data-analist Agents creation for the data extraction from external sources. Transformation and cleaning with the subsequent loading in the SQL base. Databases technologies(SQL etc), XML, Javascript, ETL frameworks
           h2.title Education
           dl.timeline
-            dt.timeline--date 2007 - 2013
+            dt.timeline--date #[span 2007 - ] #[span 2013]
             dd.timeline--desc
               h3.timeline--title Petro Mohyla Black Sea State University
               h4.timeline--sub-title Computer Science
-                .timeline--text
-                  p Assistant Network Administrator
+              .timeline--text
+                p Assistant Network Administrator
           h2.title Languages
-            .row
-              .col-6
-                p #[strong Russian] - Bilingual proficiency
-              .col-6
-                p #[strong Ukrainian] - Bilingual proficiency
-            .row
-              .col-6
-                p #[strong English] - Intermediate
+          .row
+            .col-6
+              p #[strong Russian] - Native language
+            .col-6
+              p #[strong Ukrainian] - Bilingual proficiency
+          .row
+            .col-6
+              p #[strong English] - Intermediate

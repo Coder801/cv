@@ -1,0 +1,12 @@
+.btn {
+  text-decoration: none;
+  border-radius: 4px;
+  border: 3px solid $colorSidebar;
+  padding: 10px 40px;
+  color: $colorSidebar;
+  display: inline-block;
+  transition: .3s ease;
+  &:hover {
+    background-color: color($colorSidebar a(20%));;
+  }
+}

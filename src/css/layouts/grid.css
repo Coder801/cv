@@ -16,15 +16,12 @@ Grid
 
   @media (--lg) {
     margin-bottom: $gutter-lg;
-    padding: 80px 0;
   }
   @media (--md) {
     margin-bottom: $gutter-md;
-    padding: 50px 0;
   }
   @media (--sm) {
     margin-bottom: $gutter-sm;
-    padding: 50px 0 20px;
   }
 
   .row, .row-fluid {
@@ -47,7 +44,7 @@ Grid
     }
 
     lost-utility: clearfix;
-    lost-center: 1530px;
+    lost-center: 1440px;
     @media (--md) {
       margin: 0 $gutter-md;
     }
