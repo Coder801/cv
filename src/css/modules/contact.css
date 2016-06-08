@@ -1,0 +1,10 @@
+.contact {
+  > * {
+    display: block;
+    margin-bottom: 10px;
+    color: $colorSidebar;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,27 @@
+.skill {
+  &--title {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 0;
+    color: $colorSidebar;
+    letter-spacing: -.5px;
+    font-weight: 300;
+    font-size: 2rem;
+
+    &:after {
+      position: absolute;
+      top: 55%;
+      margin-left: 10px;
+      width: 100%;
+      height: 1px;
+      background-color: $colorSidebar;
+      content: '';
+    }
+  }
+  &--list {
+    margin: 0 0 0 30px;
+    padding: 0;
+    color: $colorSidebar;
+  }
+}

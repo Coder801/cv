@@ -1,0 +1,8 @@
+/* ===========================
+Content
+=========================== */
+.content {
+  background-color: $bgContent;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}

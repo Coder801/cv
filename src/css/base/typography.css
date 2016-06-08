@@ -1,0 +1,37 @@
+/* ===========================
+Typography
+=========================== */
+html {
+  font-size: 18px;
+  font-family: $fontRoboto;
+  @media (--xl) {
+    font-size: 16px;
+  }
+  @media (--lg) {
+    font-size: 15px;
+  }
+  @media (--md) {
+    font-size: 14px;
+  }
+  @media (--sm) {
+    font-size: 12px;
+  }
+}
+input,
+select,
+textarea {
+  font-family: $fontRoboto;
+}
+
+/* All heading */
+:--heading {
+  font-family: $fontRoboto;
+}
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: .5px;
+}

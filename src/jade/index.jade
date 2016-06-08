@@ -1,0 +1,102 @@
+// Include Mixins
+include ./base/mixins
+
+// Include Layout
+extends ./layouts/layout.jade
+
+// Page Head
+block head
+  title Dmitriy Onishchenko | Frontend Developer
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name="format-detection" content="telephone=no")
+
+// Page Content
+block content
+  .wrapper
+    .container.mainarea
+      .row
+        aside.sidebar.col-4(role="complementary")
+          .info
+            figure.info--photo
+              img(src="img/cv-photo.jpg", alt="")
+            h1.info--name DMITRIY#[br] ONISHCHENKO
+            h3.info--position Web Developer
+            .contact
+              address.contact--address Nikolaev. Ukraine.
+              a.contact--phone(href="tel:") +380636126197
+              a.contact--email(href="mailto:donischenko801@gmail.com") donischenko801@gmail.com
+              a.contact--skype(href="skype:deline801") Skype: deline80
+              a.contact--linkedin(href="https://ua.linkedin.com/in/dmitryonischenko") https://ua.linkedin.com/in/dmitryonischenko
+          .skill
+            h3.skill--title Skills
+            ul.skill--list
+              li.skill--item HTML
+              li.skill--item CSS
+              li.skill--item JavaScript
+              li.skill--item jQuery
+              li.skill--item CMS
+              li.skill--item Angular,js
+              li.skill--item React.js
+              li.skill--item SQL
+              li.skill--item Photoshop
+              li.skill--item Illustrator
+              li.skill--item Jade
+              li.skill--item SASS
+              li.skill--item Gulp.js
+              li.skill--item Git
+              li.skill--item TDD testing
+
+        main.content.col-8(role="main")
+          h2.title Summary
+          p Middle Front-end developer with 5+ years of experience. More than 150 completed projects. Huge experience in the team. Development and support of large-scale projects.
+          p #[strong• HTML5/CSS3] - strong skills, wide experience. Cross-Browser/Cross-Platform Development Knowledge of best practices for performance. Using preprocessor and postprocessor language, like Jade/Haml and CSS SCSS/Less/PostCSS. Use methodology of BEM/SMACSS. Also, finalist of the IX Ukrainian Web Challenge in nomination Frontend (HTML+CSS)
+          p #[strong• JS] - average skills, experience in jQuery framework, work with APIs, external libraries (jQuery, jQuery UI, etc.), AngularJS and React frameworks. Able to write custom code as well as implement existing plugins. Experience in creation mobile applications using PhoneGap and Ionic. Low experience with Node.js.
+          p #[strong• Graphic] - experience in raster and vector graphics(Canvas, SVG). Work with Adobe Photoshop and Adobe Illustrator. Basic knowledge of Web design.
+          p #[strong• PHP/SQL] - basic skills. Knowledge of CMS and integration into hosting.
+          p #[strong• Other] - OOP Understanding, MV*, Design Patterns, version control via Git.
+          p If you have any further questions, please do not hesitate to contact me.
+
+          h2.title Work History
+          dl.timeline
+            dt.timeline--date 2013-04 - Present
+            dd.timeline--desc
+              h3.timeline--title Frontend Developer
+              h4.timeline--sub-title ARIO Industrial Inc
+                .timeline--text
+                  p Frontend Developer Experience working in large-scale projects and commercial sites. Full Front-end development. Development of adaptive websites and mobile applications. Development of templates
+            dt.timeline--date 2012-06 - 2013-04
+            dd.timeline--desc
+              h3.timeline--title Freelancer
+              h4.timeline--sub-title Freelancer
+                .timeline--text
+                  p Freelancer Freelancer Work in a team of developers. Creation of web templates and applications. Development of web sites CMS (Wordpress, Prestashop, Drupal). Assistance in optimization and promotion
+            dt.timeline--date 2011-11 - 2012-06
+            dd.timeline--desc
+              h3.timeline--title HTML/CSS Markup developer
+              h4.timeline--sub-title GeeksForLess Inc
+                .timeline--text
+                  p HTML Coder Created web page layouts(convertion from PSD to HTML), advertising material and logos from the ground up based on project requirements.
+            dt.timeline--date 2011-04 - 2011-10
+            dd.timeline--desc
+              h3.timeline--title Data-analist
+              h4.timeline--sub-title Fetch Technologies
+                .timeline--text
+                  p Data-analist Agents creation for the data extraction from external sources. Transformation and cleaning with the subsequent loading in the SQL base. Databases technologies(SQL etc), XML, Javascript, ETL frameworks
+          h2.title Education
+          dl.timeline
+            dt.timeline--date 2007 - 2013
+            dd.timeline--desc
+              h3.timeline--title Petro Mohyla Black Sea State University
+              h4.timeline--sub-title Computer Science
+                .timeline--text
+                  p Assistant Network Administrator
+          h2.title Languages
+            .row
+              .col-6
+                p #[strong Russian] - Bilingual proficiency
+              .col-6
+                p #[strong Ukrainian] - Bilingual proficiency
+            .row
+              .col-6
+                p #[strong English] - Intermediate
