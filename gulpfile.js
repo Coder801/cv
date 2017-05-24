@@ -153,7 +153,6 @@ gulp.task('modernizr', function() {
 
 gulp.task('img', function() {
 	return gulp.src(path.src.img)
-		.pipe(plugins.imagemin())
 		.pipe(gulp.dest(path.dist.img))
 		.pipe(plugins.connect.reload());
 });
