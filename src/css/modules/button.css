@@ -6,6 +6,8 @@
   color: $colorSidebar;
   display: inline-block;
   transition: .3s ease;
+  font-size: .9em;
+  white-space: nowrap;
   &:hover {
     background-color: color($colorSidebar a(20%));;
   }
