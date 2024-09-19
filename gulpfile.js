@@ -101,12 +101,10 @@ gulp.task('css', function() {
 		// plugins.mqpacker
 	];
 	return gulp.src(path.src.css)
-		.pipe(plugins.plumber(() => {
-			console.log(plugins)
-		}))
+		.pipe(plugins.plumber())
 		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.postcss(processors))
-		.pipe(plugins.minifyCss())
+		//.pipe(plugins.minifyCss())
 		.pipe(plugins.sourcemaps.write('/sourcemap'))
 		.pipe(gulp.dest(path.dist.css))
 		.pipe(plugins.connect.reload());
@@ -145,11 +143,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function() {
-	// gulp.watch(path.watch.html, ['html']);
-	gulp.watch(path.watch.css, ['css']);
-	gulp.watch(path.watch.js, ['js']);
-	gulp.watch(path.watch.fonts, ['fonts']);
-	gulp.watch(path.watch.img, ['img']);
+	gulp.watch(path.watch.html, gulp.series('html'));
+	gulp.watch(path.watch.css, gulp.series('css'));
+	gulp.watch(path.watch.js, gulp.series('js'));
+	gulp.watch(path.watch.img, gulp.series('img'));
 });
 
 gulp.task('default', gulp.series('build', 'connect', 'watch'));

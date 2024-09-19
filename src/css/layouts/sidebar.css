@@ -45,5 +45,10 @@ Sidebar
     bottom: $gutter;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (--md) {
+     position: relative;
+     bottom: 0;
+    }
   }
 }

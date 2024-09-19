@@ -9,6 +9,6 @@
   font-size: .9em;
   white-space: nowrap;
   &:hover {
-    background-color: color($colorSidebar a(20%));;
+    background-color: rgb(211, 211, 211, .2);
   }
 }

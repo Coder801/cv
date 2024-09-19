@@ -1,4 +1,7 @@
 .social {
+  display: block;
+  width: 100%;
+  
   &--list {
     clear: fix;
     margin: 0;
