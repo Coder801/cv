@@ -1,5 +1,5 @@
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic');
 /*==========================================================
 Stylesheet
 ============================================================
@@ -94,7 +94,7 @@ p {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1.1rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   font-weight: 300;
   letter-spacing: .5px;
 }
@@ -879,6 +879,10 @@ Wrapper
 .btn:focus-visible {
     background-color: rgb(211, 211, 211, .2);
   }
+.contact {
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+}
 .contact > a, .contact address {
     display: block;
     margin-bottom: 10px;
@@ -888,12 +892,17 @@ Wrapper
     font-size: 1rem;
   }
 .info--photo {
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
     padding: 5px;
     max-width: 60%;
     border: 3px solid lightgray;
     border-radius: 500px;
   }
+@media screen and (max-width: 1024px) {
+.info--photo {
+      margin-bottom: 0
+  }
+    }
 .info--photo > img {
       display: block;
       border-radius: 500px;
@@ -903,12 +912,13 @@ Wrapper
     color: lightgray;
     font-weight: 300;
     font-size: 1.8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
   }
 .info--position {
     margin: 0 0 10px 0;
     color: lightgray;
-    letter-spacing: -.5px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
   }
 .skill--list {
@@ -995,6 +1005,11 @@ Wrapper
 .timeline--date:nth-child(12n + 1) {
     clear: both;
   }
+@media screen and (max-width: 1024px) {
+.timeline--date {
+      margin-top: 4px
+  }
+    }
 .timeline--date > span {
       display: block;
       white-space: nowrap;
@@ -1007,6 +1022,11 @@ Wrapper
           display: inline-block;
           margin: 0 .2rem;
         }
+@media screen and (max-width: 1024px) {
+.timeline--date > span:nth-child(2):before {
+            display: none
+        }
+          }
 .timeline--desc {
     width: calc(99.9% * 11/12 - (0px - 0px * 11/12));
     display: block;
@@ -1031,7 +1051,7 @@ Wrapper
   }
 .timeline--title {
     margin-top: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 5px;
     letter-spacing: -.2px;
@@ -1039,13 +1059,16 @@ Wrapper
 .timeline--sub-title {
     margin-top: 0;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: -.2px;
   }
 .timeline--text {
     margin-bottom: 20px;
   }
+.timeline--text > p {
+      margin-bottom: 0.5rem;
+    }
 .title {
   position: relative;
   overflow: hidden;

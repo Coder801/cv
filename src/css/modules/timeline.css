@@ -5,6 +5,11 @@
     display: block;
     margin-top: 8px;
     font-weight: 300;
+
+    @media (--md) {
+      margin-top: 4px;
+    }
+
     > span {
       display: block;
       white-space: nowrap;
@@ -16,6 +21,10 @@
           content: '/';
           display: inline-block;
           margin: 0 .2rem;
+
+          @media (--md) {
+            display: none;
+          }
         }
       }
     }
@@ -29,7 +38,7 @@
   }
   &--title {
     margin-top: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 5px;
     letter-spacing: -.2px;
@@ -37,11 +46,15 @@
   &--sub-title {
     margin-top: 0;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: -.2px;
   }
   &--text {
     margin-bottom: 20px;
+    
+    & > p {
+      margin-bottom: 0.5rem;
+    }
   }
 }

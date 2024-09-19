@@ -1,4 +1,7 @@
 .contact {
+  border-top: 1px solid $colorSidebar;
+  padding-top: 20px;
+
   > a, address {
     display: block;
     margin-bottom: 10px;

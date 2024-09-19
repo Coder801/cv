@@ -1,10 +1,14 @@
 .info {
   &--photo {
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
     padding: 5px;
     max-width: 60%;
     border: 3px solid $colorSidebar;
     border-radius: 500px;
+
+    @media (--md) {
+      margin-bottom: 0;
+    }
 
     > img {
       display: block;
@@ -16,12 +20,13 @@
     color: $colorSidebar;
     font-weight: 300;
     font-size: 1.8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
   }
   &--position {
     margin: 0 0 10px 0;
     color: $colorSidebar;
-    letter-spacing: -.5px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
   }
 }
