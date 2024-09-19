@@ -21,20 +21,21 @@ var path = {
 		css: 'dist/css/',
 		js: 'dist/js/',
 		img: 'dist/img/',
+		files: 'dist/files/',
 	},
 	src: {
 		data: './src/data/data.json',
 		jade: 'src/jade/*.jade',
 		css: 'src/css/style.css',
 		js: 'src/js/*.js',
-		fonts: 'src/fonts/*',
+		files: 'src/files/*.{pdf}',
 		img: 'src/img/**/*.{jpg,png,svg}',
 	},
 	watch: {
 		html: 'src/jade/**/*.jade',
 		css: 'src/css/**',
 		js: 'src/js/**',
-		fonts: 'src/fonts/*',
+		files: 'src/files/*',
 		img: 'src/img/**',
 	},
 	clean: 'dist/*'
@@ -133,7 +134,13 @@ gulp.task('img', function() {
 		.pipe(plugins.connect.reload());
 });
 
-gulp.task('build', gulp.series('html', 'js', 'css', 'img'));
+gulp.task('files', function() {
+	return gulp.src(path.src.files, {encoding: false})
+		.pipe(gulp.dest(path.dist.files))
+		.pipe(plugins.connect.reload());
+});
+
+gulp.task('build', gulp.series('html', 'js', 'css', 'img', 'files'));
 
 gulp.task('connect', function() {
 	plugins.connect.server({
