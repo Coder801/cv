@@ -33,7 +33,7 @@ stylesheets/
 @import 'base/typography';
 
 /* LAYOUT - Style for page layouts */
-@import 'layouts/*';
+/* @import 'layouts/*'; */
 
 /* BLOCKS - Page blocks like header, footer, sidebar ect.*/
 @import 'blocks/*';
