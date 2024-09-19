@@ -8,6 +8,10 @@
   font-weight: 600;
   font-size: 2rem;
 
+  @media (--md) {
+    margin-bottom: 10px;
+  }
+
   &:after {
     position: absolute;
     top: 55%;

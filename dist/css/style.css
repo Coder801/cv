@@ -98,6 +98,11 @@ p {
   font-weight: 300;
   letter-spacing: .5px;
 }
+@media screen and (max-width: 1024px) {
+p {
+    margin-bottom: .6rem
+}
+  }
 strong {
   font-weight: 900;
 }
@@ -1007,13 +1012,36 @@ Wrapper
   }
 @media screen and (max-width: 1024px) {
 .timeline--date {
-      margin-top: 4px
+      width: calc(99.9% * 12/12 - (0px - 0px * 12/12));
+      margin-top: 4px;
+      text-align: right
+  }
+.timeline--date:nth-child(1n) {
+      float: left;
+      margin-right: 0px;
+      clear: none
+  }
+.timeline--date:last-child {
+      margin-right: 0
+  }
+.timeline--date:nth-child(12n) {
+      margin-right: 0;
+      float: right
+  }
+.timeline--date:nth-child(12n + 1) {
+      clear: both
   }
     }
 .timeline--date > span {
       display: block;
       white-space: nowrap;
     }
+@media screen and (max-width: 1024px) {
+.timeline--date > span {
+        display: inline;
+        font-style: italic
+    }
+      }
 .timeline--date > span:nth-child(2) {
         position: relative;
       }
@@ -1022,11 +1050,6 @@ Wrapper
           display: inline-block;
           margin: 0 .2rem;
         }
-@media screen and (max-width: 1024px) {
-.timeline--date > span:nth-child(2):before {
-            display: none
-        }
-          }
 .timeline--desc {
     width: calc(99.9% * 11/12 - (0px - 0px * 11/12));
     display: block;
@@ -1049,6 +1072,27 @@ Wrapper
 .timeline--desc:nth-child(12n + 1) {
     clear: both;
   }
+@media screen and (max-width: 1024px) {
+.timeline--desc {
+      width: calc(99.9% * 12/12 - (0px - 0px * 12/12));
+      padding: 0
+  }
+.timeline--desc:nth-child(1n) {
+      float: left;
+      margin-right: 0px;
+      clear: none
+  }
+.timeline--desc:last-child {
+      margin-right: 0
+  }
+.timeline--desc:nth-child(12n) {
+      margin-right: 0;
+      float: right
+  }
+.timeline--desc:nth-child(12n + 1) {
+      clear: both
+  }
+    }
 .timeline--title {
     margin-top: 0;
     font-weight: 400;
@@ -1079,6 +1123,11 @@ Wrapper
   font-weight: 600;
   font-size: 2rem;
 }
+@media screen and (max-width: 1024px) {
+.title {
+    margin-bottom: 10px
+}
+  }
 .title:after {
     position: absolute;
     top: 55%;
