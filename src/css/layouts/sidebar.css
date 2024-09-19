@@ -28,7 +28,7 @@ Sidebar
     color: $colorSidebar;
     letter-spacing: -.5px;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
     &:after {
       position: absolute;

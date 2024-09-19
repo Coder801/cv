@@ -98,6 +98,17 @@ p {
   font-weight: 300;
   letter-spacing: .5px;
 }
+strong {
+  font-weight: 900;
+}
+mark {
+  background-color: transparent;
+  display: inline-block;
+  padding: 0 4px;
+  border-radius: 5px;
+  background-color: rgb(211, 211, 211, .3);
+  font-weight: 400;
+}
 /* LAYOUT - Style for page layouts */
 /* ===========================
 Content
@@ -107,6 +118,11 @@ Content
   box-sizing: border-box;
   padding: 30px 50px;
 }
+@media screen and (max-width: 1024px) {
+.content {
+    padding: 0px 20px
+}
+  }
 /* ===========================
 Grid
 =========================== */
@@ -799,7 +815,7 @@ Sidebar
     color: lightgray;
     letter-spacing: -.5px;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 .sidebar--title:after {
       position: absolute;
@@ -863,23 +879,13 @@ Wrapper
 .btn:focus-visible {
     background-color: rgb(211, 211, 211, .2);
   }
-.contact > * {
+.contact > a, .contact address {
     display: block;
     margin-bottom: 10px;
     color: lightgray;
     text-decoration: none;
     font-style: normal;
     font-size: 1rem;
-  }
-.info {
-  margin-bottom: 30px;
-
-}
-@media screen and (max-width: 1024px) {
-.info {
-    margin-bottom: 0
-
-}
   }
 .info--photo {
     margin: 0 auto 30px;
@@ -903,7 +909,7 @@ Wrapper
     color: lightgray;
     letter-spacing: -.5px;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 .skill--list {
     margin: 0 0 0 0px;
@@ -993,6 +999,14 @@ Wrapper
       display: block;
       white-space: nowrap;
     }
+.timeline--date > span:nth-child(2) {
+        position: relative;
+      }
+.timeline--date > span:nth-child(2):before {
+          content: '/';
+          display: inline-block;
+          margin: 0 .2rem;
+        }
 .timeline--desc {
     width: calc(99.9% * 11/12 - (0px - 0px * 11/12));
     display: block;
@@ -1032,9 +1046,6 @@ Wrapper
 .timeline--text {
     margin-bottom: 20px;
   }
-.timeline--text > p {
-
-    }
 .title {
   position: relative;
   overflow: hidden;
@@ -1051,7 +1062,7 @@ Wrapper
     margin-left: 10px;
     width: 100%;
     height: 1px;
-    background-color: rgb(211, 211, 211, .3);
+    background-color: rgb(211, 211, 211, .9);
     content: '';
   }
 /* States - Elements statements */

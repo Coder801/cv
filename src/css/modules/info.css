@@ -1,10 +1,4 @@
 .info {
-  margin-bottom: 30px;
-
-  @media (--md) {
-    margin-bottom: 0;
-  }
-
   &--photo {
     margin: 0 auto 30px;
     padding: 5px;
@@ -28,7 +22,6 @@
     color: $colorSidebar;
     letter-spacing: -.5px;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
-
 }
