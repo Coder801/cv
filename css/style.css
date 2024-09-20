@@ -899,9 +899,14 @@ Wrapper
 .info--photo {
     margin: 0 auto 15px;
     padding: 5px;
-    max-width: 60%;
+    max-width: 75%;
     border: 3px solid lightgray;
     border-radius: 500px;
+    border-right-color: #0057b8;
+    border-top-color: #0057b8;
+    border-left-color: #ffd700;
+    border-bottom-color: #ffd700;
+    transform: rotate(-45deg);
   }
 @media screen and (max-width: 1024px) {
 .info--photo {
@@ -911,6 +916,7 @@ Wrapper
 .info--photo > img {
       display: block;
       border-radius: 500px;
+      transform: rotate(45deg);
     }
 .info--name {
     margin: 0 0 10px 0;
