@@ -34,6 +34,8 @@
     "gulp-useref": ">=3.0.5",
     "gulp-watch": ">=4.3.5",
     "gulp-wiredep": "0.0.0",
+    "html-pdf-node": "^1.0.8",
+    "http-server": "^14.1.1",
     "jshint": ">=2.9.1",
     "jshint-stylish": "^2.2.0",
     "lost": ">=6.7.1",
@@ -61,8 +63,14 @@
     "not dead"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server ./dist -c-1",
+    "make-pdf": "node make-pdf.js"
   },
   "author": "Dmitriy Onischenko",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "react-redux": "^9.1.2"
+  }
 }
