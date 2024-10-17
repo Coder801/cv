@@ -90,7 +90,7 @@ input, select, textarea {
 :is(h1, h2, h3, h4, h5, h6) {
   font-family: 'Roboto', sans-serif;
 }
-p {
+p, li {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1.1rem;
@@ -99,10 +99,18 @@ p {
   letter-spacing: .5px;
 }
 @media screen and (max-width: 1024px) {
-p {
+p, li {
     margin-bottom: .6rem
 }
   }
+ul {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+  list-style-type: disc;
+}
+li {
+  margin: 0;
+}
 strong {
   font-weight: 900;
 }
