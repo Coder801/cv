@@ -70,7 +70,10 @@
   "author": "Dmitriy Onischenko",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.26.0",
     "@reduxjs/toolkit": "^2.2.7",
+    "babel-plugin-styled-components": "^2.1.4",
+    "postcss": "^8.4.47",
     "react-redux": "^9.1.2"
   }
 }
