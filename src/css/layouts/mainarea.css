@@ -1,6 +1,0 @@
-.mainarea {
-  > .row {
-    lost-flex-container: row;
-    box-shadow: 0 0 10px 2px color($bgSidebar b(120%));
-  }
-}
