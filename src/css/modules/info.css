@@ -30,6 +30,10 @@
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+
+    & * {
+      color: $colorSidebar;
+    }
   }
   &--position {
     margin: 0 0 10px 0;
