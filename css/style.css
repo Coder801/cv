@@ -924,6 +924,9 @@ Wrapper
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
+.info--name * {
+      color: lightgray;
+    }
 .info--position {
     margin: 0 0 10px 0;
     color: lightgray;
