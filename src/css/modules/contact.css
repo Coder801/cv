@@ -1,0 +1,13 @@
+.contact {
+  border-top: 1px solid $colorSidebar;
+  padding-top: 20px;
+
+  > a, address {
+    display: block;
+    margin-bottom: 10px;
+    color: $colorSidebar;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1rem;
+  }
+}

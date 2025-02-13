@@ -1,0 +1,72 @@
+.timeline {
+  lost-utility: clearfix;
+  &--date {
+    lost-column: 1/12;
+    display: block;
+    margin-top: 8px;
+    font-weight: 300;
+
+    @media (--md) {
+      lost-column: 12/12;
+      margin-top: 4px;
+      text-align: right;
+      position: relative;
+      top: 30px;
+      height: 0;
+    }
+
+    > span {
+      display: block;
+      white-space: nowrap;
+      font-weight: 300;
+
+      @media (--md) {
+        display: inline;
+        font-style: italic;
+      }
+      
+      &:nth-child(2) {
+        position: relative;
+
+        &:before {
+          content: '/';
+          display: inline-block;
+          margin: 0 .2rem;
+        }
+      }
+    }
+  }
+  &--desc {
+    lost-column: 11/12;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+
+    @media (--md) {
+      lost-column: 12/12;
+      padding: 0;
+    }
+  }
+  &--title {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    letter-spacing: -.2px;
+  }
+  &--sub-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: -.2px;
+  }
+  &--text {
+    margin-bottom: 20px;
+
+    & > p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
