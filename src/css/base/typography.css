@@ -26,6 +26,7 @@ textarea {
 /* All heading */
 :--heading {
   font-family: $fontRoboto;
+  color: rgb(85, 85, 85);
 }
 p {
   font-size: 1rem;
@@ -33,14 +34,15 @@ p {
   margin-bottom: 1.1rem;
   line-height: 1.6rem;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 
   @media (--md) {
-    margin-bottom: .6rem;
+    margin-bottom: 0.6rem;
   }
 }
 
 strong {
+  color: rgb(85, 85, 85);
   font-weight: 900;
 }
 
@@ -49,6 +51,6 @@ mark {
   display: inline-block;
   padding: 0 4px;
   border-radius: 5px;
-  background-color: rgb(211, 211, 211, .3);
+  background-color: rgb(211, 211, 211, 0.3);
   font-weight: 400;
 }
