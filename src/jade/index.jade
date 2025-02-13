@@ -1,0 +1,153 @@
+// Include Mixins
+include ./base/mixins
+
+// Include Layout
+extends ./layouts/layout.jade
+
+// Page Head
+block head
+  title Dmitriy Onishchenko | Frontend Developer
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name="format-detection" content="telephone=no")
+  link(type="image/png" sizes="16x16" rel="icon" href="./img/icons8-profile-color-16.png")
+
+// Page Content
+block content
+  .wrapper
+    .container.mainarea
+      .row
+        aside.sidebar.col-3(role="complementary")
+          .info
+            figure.info--photo
+              img(src="img/cv-photo.jpg", alt="")
+            h1.info--name #[strong Dmytro ]#[br] Onishchenko
+            h3.info--position Senior Front End Developer
+            .contact
+              address.contact--address Kyiv. Ukraine.
+              a.contact--phone(href="tel:") +380636126197
+              a.contact--email(href="mailto:donischenko801@gmail.com") donischenko801@gmail.com
+          .skill
+            h3.sidebar--title Skills
+            ul.skill--list
+              li.skill--item JavaScript
+              li.skill--item Typescript
+              li.skill--item ReactJS/NextJS
+              ll.skill--item Monorepo
+              li.skill--item PWA
+              li.skill--item VueJS
+              li.skill--item NodeJS
+              li.skill--item HTML
+              li.skill--item CSS
+              li.skill--item SQL/NoSQL
+              li.skill--item MongoDB
+              li.skill--item CMS
+              li.skill--item Git
+              li.skill--item TDD testing
+          .social
+            h3.sidebar--title Social
+            ul.social--list
+              li.social--item
+                a.social--link(href="https://www.facebook.com/dmitry.onischenko.39")
+                  +use('fb')
+                  span dmitry.onischenko.39
+              li.social--item
+                a.social--link(href="https://ua.linkedin.com/in/dmitryonischenko")
+                  +use('in')
+                  span dmitryonischenko
+              li.social--item
+                a.social--link(href="https://github.com/Coder801")
+                  +use('gh')
+                  span coder801
+          //- a(href="files/senior-frontend-dmitry-onischenko.pdf").sidebar--btn.btn Download PDF
+
+        main.content.col-9(role="main")
+          h2.title Summary
+          p Front-end developer with 10+ years of commercial and start-up experience. Building and support of large-scale projects and web applications. Experience with modern (and not so) JavaScript frameworks and libraries. I have experience in development of a full cycle applications, including backend. Huge experience in the team using Agile methodology with Scrum\Kanban frameworks.
+          p #[strong • JS] - strong skills. Proficient in #[mark ES6+] syntax. Understanding of asynchronous code. Understanding cross-browser compatibility and optimizing applications for different browsers. Manipulating DOM elements. Understanding the event loop in JavaScript.
+          p #[strong • Frameworks] - Key framework is #[mark ReactJS/NextJS] and #[mark React ecosystem]. Working with global state managers like #[mark Redux\Flux\MobX] and asynchronously tools #[mark Thunk\Saga]. Understanding the module architecture of a React application. Experience in creation mobile and desktop applications with #[mark React Native], #[mark Electron]. Also have basic knowledge of #[mark Vue.js].
+          p #[strong • Markup] - Wide experience of HTML/CSS. Cross-Browser/Cross-Platform development knowledge of best practices for performance. Using preprocessor and postprocessor languages. Also understand all modern methodology and using them with JS frameworks
+          p #[strong • Backend] - Good knowledge of #[mark Node.js]. Basic knowledge of #[mark Python\PHP] languages. Understanding the construction of REST API applications and client-server communication. Integration with 3th-part applications. Experience with #[mark Django], #[mark NextJS], #[mark Laravel] frameworks.
+          p #[strong • Databases] - Understanding the basics of relational and NoSQL databases. Experience with major database management systems like #[mark MySQL], #[mark PostgreSQL], #[mark MongoDB]
+          p #[strong • Graphic] - Experience in raster and vector graphics(Canvas, SVG). Graphic Frameworks (GSAP, Snap.svg, D3). Basic understanding of web design.
+          p #[strong • Other] - OOP\Functional\Reactive methodology understanding, MV*, Design Patterns, SOLID principles. 
+          p If you have any questions, please contact me.
+
+          h2.title Work History
+          dl.timeline
+            dt.timeline--date #[span 2024-12] #[span Present]
+            dd.timeline--desc
+              h3.timeline--title Senior Software Engineer
+              h4.timeline--sub-title Starwind
+              .timeline--text
+                p Developed applications focused on "virtual machines". Designed and implemented solutions using microfrontend architecture with Module Federation technologies. Specialized in advanced architectural configurations and seamless integration of multiple isolated web applications.
+                p #[i Skills:] #[mark NextJS/React], #[mark Monorepo], #[mark Microfrontend], #[mark Typescript]
+            dt.timeline--date #[span 2024-04] #[span 2024-12]
+            dd.timeline--desc
+              h3.timeline--title Frontend Teamlead
+              h4.timeline--sub-title MetaChain
+              .timeline--text
+                p I worked at a company specializing in cryptocurrency operations and the development of blockchain-related applications. I led a small team, overseeing various aspects of working with digital assets, including the creation and maintenance of crypto platforms, integration of blockchain solutions.
+                p #[i Skills:] #[mark NextJS/React], #[mark Web3], #[mark PWA], #[mark Typescript]
+            dt.timeline--date #[span 2021-10] #[span 2024-04]
+            dd.timeline--desc
+              h3.timeline--title Senior Software Engineer
+              h4.timeline--sub-title AURA
+              .timeline--text
+                p Work on complex solutions in the field of user security. Creation and support of applications. Development of browser extensions.
+                p #[i Skills:] #[mark React/Redux] #[mark JavaScript], #[mark Browser Extensions], #[mark PWA], #[mark Typescript] #[mark React-Native]
+            dt.timeline--date #[span 2020-02] #[span 2021-10]
+            dd.timeline--desc
+              h3.timeline--title Senior Software Engineering
+              h4.timeline--sub-title EPAM Systems
+              .timeline--text
+                p Worked on several large projects as an outsourcing developer. Developed high-load web applications from scratch. Supported ongoing projects. Collaborated and interacted with various teams and clients.
+                p #[i Skills:] #[mark React/Redux], #[mark JavaScript], #[mark Django], #[mark Typescript], #[mark NodeJS]
+            dt.timeline--date #[span 2016-08] #[span 2020-02]
+            dd.timeline--desc
+              h3.timeline--title Frontend Developer
+              h4.timeline--sub-title ZEO Alliance
+              .timeline--text
+                p Worked as a frontend developer in a product company, beginning in the marketing department. Focused on creating user-friendly and visually appealing web interfaces to enhance customer engagement and drive conversions. Later transitioning to the R&D department. Focus shifted towards more experimental and cutting-edge projects. Prototyping, researching new technologies, and developing solutions.
+                p #[mark React/Redux], #[mark JavaScript], #[mark Electron], #[mark React-Native]
+            dt.timeline--date #[span 2013-04] #[span 2016-07]
+            dd.timeline--desc
+              h3.timeline--title Frontend Developer
+              h4.timeline--sub-title ARIO Industrial Inc
+              .timeline--text
+                p Work orient in large-scale projects and commercial sites. Creating e-commerce websites. Development of adaptive websites and mobile applications.
+                p #[i Skills:] #[mark JavaScript], #[mark Symfony]
+            dt.timeline--date #[span 2011-11] #[span 2013-04]
+            dd.timeline--desc
+              h3.timeline--title Markup developer
+              h4.timeline--sub-title GeeksForLess Inc
+              .timeline--text
+                p Responsible for creating and coding web pages. Work involved accurately converting designs from mockups into clean and semantically correct HTML, CSS and JS code. Created web page layouts, advertising material and logos from the ground up based on project requirements.
+                p #[i Skills:] #[mark JavaScript], #[mark HTML], #[mark CSS]
+            dt.timeline--date #[span 2011-04] #[span 2011-10]
+            dd.timeline--desc
+              h3.timeline--title Data-analist
+              h4.timeline--sub-title GeeksForLess Inc
+              .timeline--text
+                p Agents creation for the data extraction from external sources. Transformation and cleaning with the subsequent loading in the SQL base. Databases technologies (SQL etc), XML, Javascript, ETL frameworks
+                p #[i Skills:] #[mark JavaScript], #[mark MSSQL], #[mark RegExp]
+          h2.title Education
+          dl.timeline
+            dt.timeline--date #[span 2007] #[span 2013]
+            dd.timeline--desc
+              h3.timeline--title Petro Mohyla Black Sea State University
+              h4.timeline--sub-title Computer Science
+              .timeline--text
+                p Assistant Network Administrator
+
+          h2.title Achievement
+          .row
+            .col-12
+              p • Finalist #[mark IX] Ukrainian Web Challenge, in nomination #[mark Frontend Developer].
+              p • Mentor in Frontend courses in #[mark PHP-Academy]
+          h2.title Languages
+          .row
+            .col-6
+              p #[strong Ukrainian] - Native language
+            .col-6
+              p #[strong English] - Intermediate (B1-B2)
